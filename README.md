@@ -1,19 +1,21 @@
-# Ad-Click-Prediction-Using-Machine-Learning
-Ad Click Prediction Using Machine Learning A machine learning project to predict whether a user will click on an online advertisement. This project explores advertising data, performs exploratory data analysis (EDA), and builds a Logistic Regression model to predict ad click-through rates (CTR) based on user behavior and demographics.
-
+Ad Click Prediction Using Machine Learning
 Project Overview
 
-The online advertisement industry has become a multi-billion-dollar sector, and predicting ad click-through rates (CTR) is central to maximizing revenue for advertisers and search engines.
+The online advertisement industry is a multi-billion-dollar sector, and predicting ad click-through rates (CTR) is central to maximizing revenue for advertisers and search engines.
 
-In this project, we predict whether a user will click on an advertisement using machine learning techniques. We will focus on search ads, which are displayed when a user searches for a specific keyword, and apply Logistic Regression to predict ad clicks based on user features.
+In this project, we predict whether a user will click on an advertisement using machine learning. We focus on search ads (displayed when a user searches for a keyword) and apply Logistic Regression to predict ad clicks based on user behavior and demographics.
 
-Predicting CTR helps search engines decide which ads to display, considering both the probability of a click and the advertiser's bid amount.
+Predicting CTR helps search engines decide which ads to display based on both:
+
+Probability of a click
+
+Advertiser's bid amount
 
 Problem Statement
 
-This project uses advertising data from a marketing agency to develop a machine learning algorithm that predicts whether a particular user will click on an advertisement.
+We use advertising data from a marketing agency to develop a model that predicts whether a particular user will click on an advertisement.
 
-The dataset contains 10 variables:
+The dataset contains 10 features:
 
 Feature	Description
 Daily Time Spent on Site	Consumer time on-site in minutes
@@ -27,52 +29,52 @@ Country	Country of consumer
 Timestamp	Time at which the consumer clicked on the ad or closed the window
 Clicked on Ad	Target variable: 0 (not clicked) or 1 (clicked)
 
-Objective: Use the other 9 variables to accurately predict whether a user clicks on an advertisement.
+Objective: Predict the Clicked on Ad variable using the other 9 features.
 
-Relevance
+Relevance of CTR Prediction
 
-CTR prediction is critical because:
-
-Revenue for search engines like Google comes primarily from ads.
+Revenue for search engines like Google primarily comes from ads.
 
 Advertisers pay only when users click on their ads (Pay Per Click).
 
-Predicting CTR allows search engines to maximize revenue by displaying ads with high click probability multiplied by bid amount.
+Predicting CTR allows search engines to maximize revenue by ranking ads based on probability × bid amount.
 
-Example: If a user is highly likely to click on an ad with a high bid, that ad is prioritized.
+Example: A high-probability click on a high-bid ad is prioritized.
 
 Exploratory Data Analysis (EDA)
 
-Analyze how Daily Time Spent on Site affects the likelihood of clicking an ad.
+We explore the data to identify patterns and trends:
 
-Explore the effect of Ad Topic Line on user behavior.
+How Daily Time Spent on Site affects ad clicks.
 
-Understand demographic influence like Age, Gender, City, and Country.
+The influence of Ad Topic Line on user behavior.
 
-Identify trends and patterns that inform the machine learning model.
+Demographic effects: Age, Gender, City, Country.
+
+Patterns that inform the machine learning model.
 
 Machine Learning Approach
 
 We use Logistic Regression to:
 
-Predict whether a user clicks on an ad (binary classification).
+Predict ad clicks (binary classification).
 
-Calculate probabilities of clicks for each user.
+Calculate click probabilities for each user.
 
-Allow search engines to rank ads based on probability × bid amount.
+Rank ads for search engines using probability × bid.
 
-Steps:
+Workflow:
 
 Load and clean the dataset.
 
-Perform exploratory data analysis.
+Perform exploratory data analysis (EDA).
 
 Encode categorical variables as needed.
 
 Split data into training and test sets.
 
-Train a Logistic Regression model.
+Train Logistic Regression model.
 
-Evaluate performance using accuracy, confusion matrix, and ROC-AUC.
+Evaluate performance using accuracy, confusion matrix, ROC-AUC.
 
 Use model probabilities to predict ad clicks.
